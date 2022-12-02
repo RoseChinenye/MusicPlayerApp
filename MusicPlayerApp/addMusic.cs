@@ -5,7 +5,7 @@
         public void OnAdd()
         {
 
-            foreach (var music in playList)
+            foreach (var music in SongList)
             {
                 if (music.No != addNum)
                 {
@@ -44,7 +44,7 @@
                         else
                         {
 
-                            playList.Add(new T { No = addNum += 1, title = musicTitle, artist = artistName, source = musicSource });
+                            SongList.Add(new T { No = addNum += 1, title = musicTitle, artist = artistName, source = musicSource });
 
                             DisplayList();
 

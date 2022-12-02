@@ -43,7 +43,7 @@ namespace MusicPlayerApp
                             else
                             { 
 
-                                var edit = playList.First(s => s.No == editNo);
+                                var edit = SongList.First(s => s.No == editNo);
                                 edit.title = editTitle;
                                 edit.artist = editArtist;
                                 edit.source = editSource;
@@ -68,7 +68,7 @@ namespace MusicPlayerApp
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                OnAdd();
+                OnEdit();
             }
 
         }

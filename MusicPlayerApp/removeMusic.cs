@@ -12,9 +12,9 @@
                 if (int.TryParse(option6, out int deleteNo))
                 {
                     
-                    var del = playList.First(s => s.No == deleteNo);
+                    var del = SongList.First(s => s.No == deleteNo);
 
-                    playList.Remove(del);
+                    SongList.Remove(del);
 
                     DisplayList();
 

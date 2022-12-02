@@ -13,7 +13,7 @@
         public int addNum = 0;
         public const int num = 5;
 
-        List<T> playList = new List<T>
+        List<T> SongList = new List<T>
             {
                 new T {No = 1, title = "You are the One", artist = "Shania Twain", source = "i-net.com"},
                 new T {No = 2, title = "Breakfast", artist = "Ugoccie & Phyno", source = "TrendyBeatz.com"},
@@ -24,9 +24,9 @@
 
         public void DisplayList()
         {
-            Console.WriteLine("\n.........Music PlayList..........");
+            Console.WriteLine("\n.........List of Songs..........");
 
-            foreach (var s in playList)
+            foreach (var s in SongList)
             {
                 Console.WriteLine($"\nNo:{s.No}\t Title:{s.title}\t Artist:{s.artist}\t\t Source:{s.source}\t");
             }
