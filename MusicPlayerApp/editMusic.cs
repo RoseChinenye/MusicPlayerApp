@@ -43,7 +43,7 @@ namespace MusicPlayerApp
                             else
                             { 
 
-                                var edit = playList.FirstOrDefault(s => s.No == editNo);
+                                var edit = playList.First(s => s.No == editNo);
                                 edit.title = editTitle;
                                 edit.artist = editArtist;
                                 edit.source = editSource;
