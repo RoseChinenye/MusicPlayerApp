@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MusicPlayerApp
+﻿namespace MusicPlayerApp
 {
-    static class MusicPlay
+    public partial class App
     {
-        public static void OnPlay()
+        public void OnPlay()
         {
             Console.WriteLine("Enter the No of the Music you want to Play: ");
             var option6 = Console.ReadLine().ToUpper().Trim();
@@ -33,7 +27,7 @@ namespace MusicPlayerApp
                         Console.WriteLine("\"Hard-To-Find\" is Playing......");
                         break;
                     default:
-                        Console.WriteLine("Please enter a music from the playlist!");
+                        Console.WriteLine("Please enter a music No from the playlist!");
                         OnPlay();
                         break;
                 }

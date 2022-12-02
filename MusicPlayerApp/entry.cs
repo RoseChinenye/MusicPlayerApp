@@ -1,10 +1,11 @@
 ﻿namespace MusicPlayerApp
 {
-    public class entry
+    public static class entry
     {
-        static void Run()
+        public static void Run()
         {
             App app = new App();
+
             Console.WriteLine("\nEnter \"1\" to Play a Music\nEnter \"2\" to Add a Music\nEnter \"3\" to Remove a Music\nEnter \"4\" to Edit a Music\n");
             
             var option1 = Console.ReadLine();
@@ -15,7 +16,7 @@
                 {
                     case 1:
                         Console.Clear();
-                        MusicPlay.OnPlay();
+                        app.OnPlay();
                         break;
 
                     case 2:
